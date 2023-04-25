@@ -121,7 +121,7 @@ Storage=persistent
 EOF
 sudo systemctl restart systemd-journald
 
-sudo tee <<EOF etc/systemd/system/starknet.service
+sudo tee <<EOF /etc/systemd/system/starknet.service
 [Unit]
 Description=StarkNet Node
 After=network.target
